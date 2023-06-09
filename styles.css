@@ -1,0 +1,332 @@
+:root {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 25px;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "menu nav nav nav"
+    "menu middle middle middle";
+    grid-template-rows: 0.6 4fr;
+    grid-template-columns: 10rem 1fr 1fr 1fr;
+}
+
+.menu{
+    grid-area: menu;
+    background-color:  rgb(249, 106, 106);
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 170px;
+     /* transition  */
+}
+
+.menuItem{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.menuItem > h1{
+    margin-left: 10px;
+}
+
+.menuItem > img{
+    margin-left: 5px;
+}
+
+.dashboard {
+    font-size: 1.6rem;
+}
+
+.dashboard > img {
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    width: 40px;
+}
+.nav{
+    grid-area: nav;
+    background-color: white;
+    border-bottom: 2px solid rgb(178, 178, 178);
+    padding: 1rem 3rem;
+}
+.drawer:hover > .menuItem > h1 {
+    display: flex;
+  }
+
+.topNav{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+
+}
+
+.search{
+    display: flex;
+   
+   
+
+}
+
+ .search > input {
+    width: 600px;
+    background-color: gainsboro;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 20px;
+} 
+
+.headerItem {
+    gap: 10px;
+}
+.search > img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.nav .bell{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bellIcon {
+    padding-left: 15px;
+    margin-right: 25px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.image{
+    width: 23px;
+    margin-right: 10px;
+}
+
+.image2 {
+    width: 47px;
+   
+}
+
+.greeting{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn{
+    background-color: rgb(249, 106, 106);
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+
+.middle{
+    grid-area: middle;
+    background-color: gainsboro;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  
+}
+
+.middle h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.card-name {
+    font-weight: 600;
+}
+
+.card-text {
+    color: rgb(91, 91, 91);
+
+}
+
+.card {
+    background-color: white;
+    border-left: 11px solid rgb(249, 106, 106);
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card p{
+    margin-top: 8px;
+}
+
+.project .card-name {
+    font-size: 20px;
+}
+
+.project .icons{
+    margin-top: auto;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    gap: 3px;
+}
+
+.project h2{
+    padding-top: 30px;
+    font-weight: 600;
+}
+.a-card {
+    width: 25ch;
+    padding-top: 5px;
+    background-color: white;
+
+    border-left: 11px solid rgb(249, 106, 106);
+}
+
+.a-border {
+    margin-top: 20px;
+    border-top: 1px solid grey;
+    width: 10.2rem;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+}
+
+.announcements {
+    grid-area: announcements;
+    width: 25ch;
+    margin-top: -10px;
+   
+}
+.a-p {
+    padding-top: 10px;
+}
+  
+.announcements h5 {
+    font-size: 1.2rem;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.announcements p {
+    font-size: 1rem;
+    overflow: hidden;
+    margin: 12px;
+    color: rgb(91, 91, 91);
+}
+
+.announcements h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.trending {
+    grid-area: trending;
+    display: flex;
+    
+}
+
+.trending {
+    display: flex;
+    display: block;
+    width: 100%;
+    align-items: center;
+    width: 25ch;
+    background-color: white;
+    border-left: 11px solid rgb(249, 106, 106);
+    margin-bottom: 150px;
+    margin-top: 10px;
+    padding-bottom: 1rem;
+   
+}
+
+.trending p {
+    overflow: hidden;
+    margin: 12px; 
+    font-size: 1.1rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+.trending img {
+    margin-bottom: -5px;
+    margin-right: 2px;
+}
+
+.trending1 {
+    padding: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.t-subtext {
+    font-size: 15px;
+    margin-left: 15px;
+    color: grey;
+}
